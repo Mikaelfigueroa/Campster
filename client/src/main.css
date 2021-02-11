@@ -1,0 +1,901 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+* {
+  outline: none;
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+  width: 50px;
+  height: 50px;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  border: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+button {
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.search-container {
+  background-color: white;
+  padding: 0px 16px;
+}
+
+.fa-search {
+  height: 16px;
+  color: #b9b9b9;
+  padding: 0px;
+}
+
+#search {
+  background-color: white;
+  border: none;
+  height: 40px;
+  padding: 4px;
+}
+
+.new-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-control-form .reset-location {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #cecece;
+  padding: 10px 13.5px;
+}
+
+.user-control-form {
+  padding: 35px 20px 20px 20px;
+  position: relative;
+}
+
+.user-control-form h1 {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+input[type=submit] {
+  color: white;
+  background-color: #06004d;
+}
+
+input, label, textarea {
+  background-color: white;
+  padding: 20px;
+  color: #252525;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #5c5c5c;
+  margin-bottom: 10px;
+}
+
+#root {
+  width: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: white;
+  z-index: 2;
+  border: 1px solid #cfcfcf;
+}
+
+.dropdown-content span {
+  display: flex;
+  flex-direction: row;
+}
+
+.show-drop {
+  display: flex !important;
+}
+
+.dropdown, .dropbtn {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.dropbtn {
+  padding: 0px !important;
+}
+
+.dropdown-content * {
+  color: #252525;
+  padding: 5px 4px;
+}
+
+#mobile-drop {
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+#mobile-drop .search-container {
+  width: 100%;
+}
+
+.review-drop-cont {
+  position: absolute;
+  top: 34px;
+  right: 36px;
+}
+
+.review-drop-cont button, .review-drop-cont .dropdown {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.review-drop-cont .dropdown-content {
+  width: 85px;
+  right: 0;
+}
+
+#reviewform input {
+  display: none;
+}
+
+#reviewform label {
+  padding: 0px;
+  border: none;
+}
+
+#reviewform {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#reviewform span {
+  align-self: center;
+  padding-bottom: 20px;
+}
+
+#reviewform textarea {
+  border: 1px solid #cfcfcf;
+  margin-bottom: 10px !important;
+}
+
+#reviewform button {
+  padding: 10px 0px;
+  width: 100%;
+  background-color: #06004d;
+  color: white;
+}
+
+.review-form-cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.show {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#header-side .show {
+  top: 52px;
+  right: 0px;
+}
+
+.user-control-form, .prompt-cont {
+  background-color: white;
+  width: 300px;
+}
+
+.fa-pulse {
+  font-size: 50px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.register, .login, .prompt {
+  background-color: #66666680;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.fa-star {
+  background-color: #a1a1a1;
+  padding: 4px;
+  margin: 1px;
+  border-radius: 2px;
+  color: white;
+}
+
+.star1 {
+  background-color: #e00400 !important;
+}
+
+.star2 {
+  background-color: #ee7300 !important;
+}
+
+.star3 {
+  background-color: #f7de00 !important;
+}
+
+.star4 {
+  background-color: #b2da00 !important;
+}
+
+.star5 {
+  background-color: #00e400 !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-content: center;
+  align-items: center;
+}
+
+.header-wrapper {
+  background-color: #06004d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-wrapper, .review-wrapper, .wrapper {
+  padding: 12px 30px;
+}
+
+.logo {
+  font-size: 32px;
+  color: white;
+  font-family: "Karla", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 3px;
+}
+
+.fa-campground {
+  font-size: 23px;
+  margin-right: 4px;
+}
+
+.login-btn {
+  padding: 10px 20px;
+  border: 1px solid white;
+  color: white;
+}
+
+.profile-logo {
+  width: 40px;
+  height: 40px;
+}
+
+#header-side {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+#mobile-search-cont {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  background-color: #3d3d3d;
+  margin-right: 10px;
+}
+
+#mobile-search-cross {
+  background-color: #3d3d3d;
+  padding: 0px;
+  width: 40px;
+}
+
+.landingpage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.landing-image-cont {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.landing-image {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+}
+
+.landing-overlay {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  padding-left: 30px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(10, 10, 10, 0.15);
+}
+
+.landing-overlay h2 {
+  color: #919191;
+  letter-spacing: 2px;
+  padding-bottom: 30px;
+  font-size: 30px;
+  width: 60%;
+}
+
+.landing-overlay .search-container {
+  width: 45%;
+  box-sizing: border-box;
+  padding: 6px 20px;
+}
+
+.landing-campground-cont {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.landing-campground {
+  width: 30%;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  border: 1px solid #c2c2c2;
+  margin-bottom: 10px;
+}
+
+.landing-campground img {
+  width: 100%;
+  height: calc(100% - 67px);
+  padding-bottom: 10px;
+}
+
+.landing-campground a {
+  font-weight: 600;
+}
+
+.landing-campground p {
+  padding-left: 10px;
+}
+
+.bookmarks .landing-campground, #campground-index .landing-campground {
+  padding-bottom: 16px;
+}
+
+.landing-campground .stars-cont {
+  padding: 3px 0px 3px 8px;
+}
+
+.profile-page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-header img {
+  padding-top: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+.profile-reviews {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-header .fa-star {
+  background-color: #06004d;
+  color: white;
+}
+
+a, #logoutbtn {
+  color: #06004d;
+  font-weight: 600;
+}
+
+.logout-btn-span {
+  margin-left: 3px;
+}
+
+.profile-header a {
+  border: 1px solid #d4d4d4;
+  padding: 5px;
+  width: 200px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  width: 100%;
+}
+
+.profile-header * {
+  margin-bottom: 4px;
+}
+
+#search-count {
+  width: 100%;
+  border-top: 1px solid #cfcfcf;
+  bottom-bottom: 1px solid #cfcfcf;
+  background-color: #ddd;
+  padding: 12px 30px;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+
+.profile-header a, .profile-header p {
+  font-weight: 600;
+  color: #0e0e0eac;
+  text-align: center;
+}
+
+.profile-edit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px 30px;
+}
+
+.profile-edit {
+  width: 100%;
+}
+
+.profile-edit-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 16px 30px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.profile-edit-header p {
+  font-weight: 600;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.reviews h1 {
+  padding: 5px;
+}
+
+.review img {
+  width: 100px;
+  height: 100px;
+  padding-right: 15px;
+}
+
+.review {
+  background-color: #fdfdfd;
+  border: 1px solid #cfcfcf;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+#imagepreview {
+  width: 100%;
+  height: auto;
+  padding-bottom: 10px;
+}
+
+.date {
+  color: #838383;
+}
+
+.review-text-cont {
+  padding-top: 10px;
+}
+
+.review-cont {
+  display: flex;
+  flex-direction: row;
+}
+
+.review-cont * {
+  padding-bottom: 5px;
+}
+
+.review-text {
+  padding-left: 115px;
+  padding-top: 10px;
+  border-top: 1px solid #cfcfcf;
+  margin-top: 10px;
+}
+
+.search {
+  margin: 0px;
+}
+
+.campground-cont {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 0px;
+}
+
+.campground-show {
+  display: flex;
+  justify-content: center;
+}
+
+.campground-cont img {
+  width: 100%;
+  height: auto;
+}
+
+.campground-show-wrapper {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.map {
+  padding: 20px;
+  background-color: #fdfdfd;
+  height: 366px;
+  border: 1px solid #cfcfcf;
+  width: 340px;
+  box-sizing: border-box;
+}
+
+.google-map {
+  height: 300px;
+  width: 300px;
+  padding-bottom: 10px;
+}
+
+.campground-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.campground-show .review {
+  width: 840px;
+  margin-right: 20px;
+}
+
+.campground-cont h1 h2 {
+  font-weight: 600;
+}
+
+.campground-cont-wrapper {
+  padding: 10px 0px;
+  position: relative;
+}
+
+.review-match {
+  position: relative;
+}
+
+.review-match .review {
+  border: 1px solid #06004d !important;
+}
+
+.review {
+  margin-bottom: 10px;
+}
+
+#bookmarkBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 16px;
+  border: 1px solid #cfcfcf;
+  color: #919191;
+}
+
+.fa-bookmark {
+  margin-right: 6px;
+}
+
+@media (max-width: 700px) {
+  #mobile-search-cont {
+    display: flex;
+  }
+
+  .header-wrapper, .reveiw-wrapper, .wrapper {
+    padding: 6px 2px;
+  }
+
+  .header .search-container {
+    display: none;
+  }
+
+  .landing-overlay h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1100px) {
+  .landing-campground {
+    width: 100%;
+  }
+}
+@media (max-width: 1220px) {
+  .map {
+    width: 100%;
+  }
+
+  .campground-show .review {
+    width: 100%;
+  }
+
+  .campground-section {
+    flex-direction: column !important;
+  }
+
+  .google-map {
+    width: 100%;
+  }
+
+  .campground-cont-wrapper {
+    padding: 20px;
+  }
+}
